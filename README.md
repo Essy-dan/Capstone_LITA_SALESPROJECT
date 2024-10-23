@@ -15,4 +15,11 @@ The primary source of data used here is Data Sale.csv and this is an open source
 - PowerBI for data visualization
 -  Github for Portfolio building.
 
+### Data Analysis
+
+```SQL
+SELECT * FROM TABEL1
+WHERE CONDITION = TRUE
+```
+
 
