@@ -1,4 +1,4 @@
-# Capstone_LITA_SALESPROJECT
+
 Capstone Project Documentation with the Incubator's Hub.
 
 ### Project Overview
@@ -47,6 +47,92 @@ The dataset was transformed to enhance its suitability for analysis.
 - Slicers were implemented to provide interactivity and enhance the dashboard's usability.
 Overall, the Excel analysis and visualization process facilitated a thorough examination of the data, enabling the extraction of valuable insights and presenting them in an interactive and visually appealing manner.
 
+### Busiess Task/Dashboard Component
+---
+The overall sales for 2024 up to August 2024 combined is #2,101,090.
+
+The total units sold amount to 68,461 units.
+
+The average price per unit sold is #29.
+# Excel Summaries of Total Sales by Product, Region, and Month using Pivot Tables.
+
+
+
+
+
+
+
+
+The pivot tables shows shoes as the highest selling product with total reveue of #613,380 and 29.19% of the total sales, and socks as the lowest purchased product with total revenue of #180,785 with 8.60% contribution to total sales value. The pivot tables also shows the region with most sales being South with total revenue of #927,820 with 44.16% to the total sales.
+
+# SQL QUERIES
+
+ 1. retrieve the total sales for each product category
+```
+SELECT Product, SUM(Quantity*Unitprice) AS Total_Sales from [dbo].[SalesData] 
+ GROUP BY product
+```
+
+ 2. find the number of sales transactions in each region.
+ 
+```
+SELECT COUNT(ORDERID) AS Sales_Transaction, Region from [dbo].[SalesData] 
+ GROUP BY Region
+```
+
+3. find the highest-selling product by total sales value.
+
+```SELECT TOP 1 Product, SUM(Quantity*Unitprice) AS Total_Sales from [dbo].[SalesData] 
+GROUP BY Product 
+ORDER BY Total_Sales DESC
+```
+
+4. calculate total revenue per product.
+
+```
+SELECT Product, SUM(Quantity*Unitprice) AS Total_Sales from [dbo].[SalesData] 
+GROUP BY Product
+``` 
+
+5.calculate monthly sales totals for the current year. done
+
+ ```
+SELECT
+ MONTH(OrderDate) AS Month,
+    SUM(Quantity*Unitprice) AS Monthly_TotalSales
+FROM [dbo].[SalesData] 
+WHERE YEAR(OrderDate) = YEAR(GETDATE()) 
+ GROUP BY MONTH(OrderDate)
+ORDER BY Month
+```
+
+ 6.find the top 5 customers by total purchase amount.
+
+```
+SELECT TOP 5 CustomerID, SUM(Quantity*Unitprice) AS Total_Purchase_Amount FROM [dbo].[SalesData]
+GROUP BY CustomerID
+ORDER BY Total_Purchase_Amount DESC
+```
+  
+
+ 7. calculate the percentage of total sales contributed by each region.
+
+
+
+8.identify products with no sales in the last quarter.
+
+```
+SELECT DISTINCT Product FROM [dbo].[SalesData]
+WHERE PRODUCT NOT IN (SELECT DISTINCT Product FROM [dbo].[SalesData]
+WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE()))
+```
+
+
+
+
+
+
+
 
 
 
@@ -54,5 +140,6 @@ Overall, the Excel analysis and visualization process facilitated a thorough exa
 SELECT * FROM TABEL1
 WHERE CONDITION = TRUE
 ```
+
 
 
