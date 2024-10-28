@@ -64,9 +64,9 @@ The dataset was transformed to enhance its suitability for analysis.
 - Pivot table calculations and aggregations were employed to derive meaningful insights from the data.
 - Various SQL queries were written to extract meaningful columns from dataset.
 3.	Data Visualization:
-- The analysis results were visualized using various Excel charts, including pivot table charts.
+- The analysis results were visualized using PowerBI.
 - Slicers were implemented to provide interactivity and enhance the dashboard's usability.
-Overall, the Excel analysis and visualization process facilitated a thorough examination of the data, enabling the extraction of valuable insights and presenting them in an interactive and visually appealing manner.
+Overall, the analysis and visualization process facilitated a thorough examination of the data, enabling the extraction of valuable insights and presenting them in an interactive and visually appealing manner.
 
 ### Busiess Task/Dashboard Component
 ---
