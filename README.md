@@ -4,7 +4,19 @@ Capstone Project Documentation with the Incubator's Hub.
 ### Project Overview
 ---
 Businesses have always used data to make informed business decisions. With significant advancements in collecting, storing, analyzing, and reporting data in the last few decades, extracting actionable insights from large and complex datasets has never been easier, It has now become an indispensable tool for organizations seeking to gain a competitive edge. More than ever, organizations have now been able to drive informed decisions, optimize processes, and improve overall performance by leveraging analytics technology. Such organizations include large retail companies.
-This project presents an exploratory data analysis (EDA) of E-commerce sales data for a fictitious retail company that closely resembles the operational characteristics of real-world retailers. The analysis aims to uncover valuable patterns, trends, and insights that will help the company better understand its sales dynamics, customer behavior, and profitability.
+This project presents an exploratory data analysis (EDA) of E-commerce sales data for a retail company that closely resembles the operational characteristics of real-world retailers. The analysis aims to uncover valuable patterns, trends, and insights that will help the company better understand its sales dynamics, customer behavior, and profitability.
+
+Project Summary
+---
+
+In this project, we are tasked with analyzing the sales performance of a retail store, to uncover key insights such as top-selling products, regional 
+performance, and monthly sales trends.
+
+### Goal
+---
+
+The goal is to produce an interactive Power BI dashboard that highlights the findings such as; top-selling products, regional 
+performance, and monthly sales trends.
 
 ### Data Source
 ---
@@ -20,6 +32,15 @@ The primary source of data used here is Data Sale.csv and this is an open source
 - Quantity: The quantity or number of units of a particular product sold during a specific sales transaction.
 - Unit Price: The cost or price associated with a single unit of a product.
 - Total Sales: The overall revenue generated from the sales transactions
+
+- ### Exploratory Data Analysis
+
+EDA involved the exploration of the data to answer some questions about the Data such as:
+
+Total Sales for each product category and What product is the highest selling?
+what is the overall sales trend?
+number of sales transaction in each region, and what region has the highest sales?
+percentage of total sales by region?
 
 ### Tools Used
 ---
@@ -113,13 +134,17 @@ SELECT TOP 5 CustomerID, SUM(Quantity*Unitprice) AS Total_Purchase_Amount FROM [
 GROUP BY CustomerID
 ORDER BY Total_Purchase_Amount DESC
 ```
-  
 
- 7. calculate the percentage of total sales contributed by each region.
+7. calculate the percentage of total sales contributed by each region.
 
+```
+SELECT region, 
+       SUM(quantity * unitprice) / (SELECT SUM(quantity * unitprice) FROM [dbo].[SalesData]) * 100 AS percentage_sales
+FROM [dbo].[SalesData]
+GROUP BY region
+```
 
-
-8.identify products with no sales in the last quarter.
+8. identify products with no sales in the last quarter.
 
 ```
 SELECT DISTINCT Product FROM [dbo].[SalesData]
