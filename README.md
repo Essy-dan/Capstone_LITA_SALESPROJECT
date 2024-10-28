@@ -77,10 +77,9 @@ The total units sold amount to 68,461 units.
 The average price per unit sold is #29.
 # Excel Summaries of Total Sales by Product, Region, and Month using Pivot Tables.
 
+![Screenshot (178)](https://github.com/user-attachments/assets/444beae1-a476-424a-b49b-cddbe75df890)
 
-
-
-
+![Screenshot (180)](https://github.com/user-attachments/assets/36ae76b2-96e7-4632-8b23-13d9446caad0)
 
 
 
@@ -92,31 +91,33 @@ The pivot tables shows shoes as the highest selling product with total reveue of
 ```
 SELECT Product, SUM(Quantity*Unitprice) AS Total_Sales from [dbo].[SalesData] 
  GROUP BY product
+
+![Screenshot (184)](https://github.com/user-attachments/assets/62fe34db-536c-419f-81cf-9e18fb927b1d)
 ```
 
  2. find the number of sales transactions in each region.
- 
-```
+  
+ ```
 SELECT COUNT(ORDERID) AS Sales_Transaction, Region from [dbo].[SalesData] 
  GROUP BY Region
 ```
+![Screenshot (181)](https://github.com/user-attachments/assets/5ae23098-fa19-4196-bff2-5a46ebe55164)
 
 3. find the highest-selling product by total sales value.
-
 ```SELECT TOP 1 Product, SUM(Quantity*Unitprice) AS Total_Sales from [dbo].[SalesData] 
 GROUP BY Product 
 ORDER BY Total_Sales DESC
 ```
+![Screenshot (186)](https://github.com/user-attachments/assets/bfdf78ac-6c73-483a-adb3-55a494931df5)
 
 4. calculate total revenue per product.
-
 ```
 SELECT Product, SUM(Quantity*Unitprice) AS Total_Sales from [dbo].[SalesData] 
 GROUP BY Product
 ``` 
+![Screenshot (187)](https://github.com/user-attachments/assets/d370ebba-e983-4383-9df9-e2fb9301fc34)
 
-5.calculate monthly sales totals for the current year. done
-
+5.calculate monthly sales totals for the current year. 
  ```
 SELECT
  MONTH(OrderDate) AS Month,
@@ -126,9 +127,9 @@ WHERE YEAR(OrderDate) = YEAR(GETDATE())
  GROUP BY MONTH(OrderDate)
 ORDER BY Month
 ```
+![Screenshot (188)](https://github.com/user-attachments/assets/a65f5284-2902-46f6-8c7a-20a329e85444)
 
  6.find the top 5 customers by total purchase amount.
-
 ```
 SELECT TOP 5 CustomerID, SUM(Quantity*Unitprice) AS Total_Purchase_Amount FROM [dbo].[SalesData]
 GROUP BY CustomerID
@@ -136,22 +137,21 @@ ORDER BY Total_Purchase_Amount DESC
 ```
 
 7. calculate the percentage of total sales contributed by each region.
-
 ```
 SELECT region, 
        SUM(quantity * unitprice) / (SELECT SUM(quantity * unitprice) FROM [dbo].[SalesData]) * 100 AS percentage_sales
 FROM [dbo].[SalesData]
 GROUP BY region
 ```
+![Screenshot (191)](https://github.com/user-attachments/assets/17e5b5f2-1380-400a-938e-6fba70411218)
 
 8. identify products with no sales in the last quarter.
-
 ```
 SELECT DISTINCT Product FROM [dbo].[SalesData]
 WHERE PRODUCT NOT IN (SELECT DISTINCT Product FROM [dbo].[SalesData]
 WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE()))
 ```
-
+![Screenshot (190)](https://github.com/user-attachments/assets/92df6a5a-ac07-4e2c-abe4-d57f541e9a61)
 
 
 
