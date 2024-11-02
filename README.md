@@ -158,7 +158,19 @@ WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE()))
 
 
 
+Inference
+Sales Overview: It was discovered that the sales decline in Year 2024 with N109,570 lower than the revenue for the year 2023. In the last quarter of 2023, 3 products out of 6 were not purchased by the customers, these products include; Shirt, Hat an Shoes. Also in the last quarter in the year 2024, only hat and shoes were sold leaving Jacket, Shirt, Gloves and socks unsold. There are many factors that might have caused the decline in revenue, it can be that there was a change in customer taste, rise in competition and this has to be addressed by having sales promotion and avertisement to increase the revenue.
 
+Top performing products: By using the exel & SQL, the product "Shoes" was considered to be the top performing product base on the total revenue it generated which is higher than the other products.
+
+Regional Breakdown:
+
+East: In Year 2023, the total revenue generated was N393,945. However, there was a significant decline in 2024 with the total revenue coming down to N91,980 representing 62% decrease. This decrease in revenue may suggest increase in competitors, difficulty in maintaining sales, economic conditions and/or market contraction. This indicate a potential area of concern which requires immediate attention. The company should attempt to increase sales & marketing techniques, reaching more customers, maintaining good relationship with the current and new customers, create special incentives, develop a public reputation for quality and expertise, offer discount, rebates and coupons, review the current prices of products among others.
+North: There was a notable increase in the total turnover from N143,960 in Year 2023 to N243,040 in Year 2024 with 26% increase. The company should invest more products in this region to better boost the total revenue.
+South: This region also performs well in generating revenue to the company. However, there was a slight decrease in revenue generated as decrease of N33,820 was recorded representing 4% decrease. This is not a major challenge but the reason for the drop in revenue have to be investigate so as to maintan/increase the revenue in a subsequent year.
+West: There is a significant increase in the revenue recorded in this region as N127,135 increase was recorded in between 2023 & 2024. It might be that the company is a monopoly. This need to be maintain for the region to keep on recording increase in revenue.
+Conclusion
+Based on the data sets analyzed for year 2023 and 2024, it was confirmed that the company recorded a declined revenue generation in South and most importantly East which raised a great concern. The company is advised to do a market survey so as to understand the customers' preference, improve/maintain the product quality and make a strategy plan on how to deliver and capture the heart of the customers. The company is also expected to maintain good relationship with the customers in the remaining region that recorded increase in revenue which are North and West as this will help to keep on recording increased revenue in future years.
 
 
 ```SQL
