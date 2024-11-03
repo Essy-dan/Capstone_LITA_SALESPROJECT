@@ -77,9 +77,10 @@ The total units sold amount to 68,461 units.
 The average price per unit sold is #29.
 # Excel Summaries of Total Sales by Product, Region, and Month using Pivot Tables.
 
-![Screenshot (178)](https://github.com/user-attachments/assets/444beae1-a476-424a-b49b-cddbe75df890)
+![Screenshot (234)](https://github.com/user-attachments/assets/d24289fe-d829-403a-bd57-cfecb4291233)
 
-![Screenshot (180)](https://github.com/user-attachments/assets/36ae76b2-96e7-4632-8b23-13d9446caad0)
+
+![Screenshot (180)](https://github.com/user-attachments/assets/36ae76b2-96e7-4632-8b23-13d9446caad0
 
 
 
