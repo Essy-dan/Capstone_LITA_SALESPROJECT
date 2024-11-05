@@ -1,6 +1,5 @@
 
-Capstone Project Documentation with the Incubator's Hub.
-
+Sales Data Documentation
 ### Project Overview
 ---
 Businesses have always used data to make informed business decisions. With significant advancements in collecting, storing, analyzing, and reporting data in the last few decades, extracting actionable insights from large and complex datasets has never been easier, It has now become an indispensable tool for organizations seeking to gain a competitive edge. More than ever, organizations have now been able to drive informed decisions, optimize processes, and improve overall performance by leveraging analytics technology. Such organizations include large retail companies.
@@ -173,9 +172,9 @@ Quarter 4 Trends: Since October to December data is incomplete for 2024, it’s 
 ```
 SELECT Product, SUM(Quantity*Unitprice) AS Total_Sales from [dbo].[SalesData] 
  GROUP BY product
+```
 
 ![Screenshot (184)](https://github.com/user-attachments/assets/62fe34db-536c-419f-81cf-9e18fb927b1d)
-```
 
  2. find the number of sales transactions in each region.
   
