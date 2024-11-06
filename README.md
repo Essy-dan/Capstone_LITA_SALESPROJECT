@@ -206,7 +206,7 @@ This query calculates the total sales for each product category in the dataset. 
 
 2. Breakdown:
 
-SUM(TotalSales): Calculates the total sales for each category by summing up sales values in the TotalSales column.
+SUM(Quantity*Unitprice): Calculates the total sales for each category by summing up sales values in the TotalSales column.
 
 GROUP BY ProductCategory: Groups the sales data by each unique product category, so that total sales are calculated per category.
 
@@ -284,13 +284,9 @@ ORDER BY TotalSalesValue DESC: Sorts the results in descending order based on to
 
 LIMIT 1: Returns only the top result, which is the product with the highest total sales value.
 
-
-
 3. Insight Derived:
 
 This result reveals which product has contributed the most to overall revenue, identifying a high-impact item that is driving sales. Knowing the highest-selling product allows the business to prioritize this product in marketing, ensure optimal stock levels, and potentially use it as a lead product to attract more customers.
-
-
 
 4. Relevance to the Dataset and Project:
 
