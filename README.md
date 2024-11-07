@@ -1,12 +1,30 @@
 
 **Sales Data Analysis**
+[Project Overview](#project-overview)
+
+[Objectives](#objectives)
+
+[Expected Outcomes](#expected-outcomes)
+
+[Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Tools Used](#tools-used)
+
+[Analysis](#analysis)
+
+[Business Task/Dashboard Component](#business-task/dashboard-component)
+
+[Key Strategies and Recommendations](#Key-strategies-and-recommendations)
+
+[Conclusion](#conclusions)
 
 ### Project Overview
 ---
 
 This project focuses on analyzing sales data for a retail business offering a range of products, including shoes, jackets,shirts,hats, gloves and socks. The primary goal is to uncover key sales trends, identify top-performing products, and analyze regional sales distribution to better understand customer preferences and maximize revenue potential. By examining this data, we aim to support strategic decision-making around inventory, pricing, and marketing efforts to drive growth and improve profitability.
 
-Objectives
+### Objectives
+---
 
 1. Understand Product Performance:
 
@@ -32,7 +50,8 @@ Evaluate if certain products, such as jackets or hats, exhibit seasonal trends t
 
 Use data insights to understand customer buying patterns and preferences, which can help tailor marketing efforts to target specific demographics or regions more effectively.
 
-Expected Outcomes
+### Expected Outcomes
+---
 
 Through this analysis, the project seeks to deliver actionable insights that will help:
 
@@ -61,6 +80,7 @@ The primary source of data used here is Data Sale.csv and this is an open source
 - Total Sales: The overall revenue generated from the sales transactions
 
 - ### Exploratory Data Analysis
+- ---
 
 EDA involved the exploration of the data to answer some questions about the Data such as:
 
@@ -76,7 +96,7 @@ percentage of total sales by region?
 - PowerBI for data visualization
 -  Github for Portfolio building.
 
-### Analysis Summary
+### Analysis 
 ---
 The analysis was conducted using combination tools such as; Microsoft Excel, Structured Query Language -SQL, PowerBI following a series of steps outlined below:
 
@@ -356,6 +376,7 @@ WHERE YEAR(OrderDate) = YEAR(GETDATE())
  GROUP BY MONTH(OrderDate)
 ORDER BY Month
 ```
+
 ![Screenshot (188)](https://github.com/user-attachments/assets/a65f5284-2902-46f6-8c7a-20a329e85444)
 
 For calculating the monthly sales total for the current year, here's how you can explain the query and its relevance to the dataset and project:
@@ -398,10 +419,13 @@ Compare current year sales with previous years to assess growth and identify tre
 
  6.find the top 5 customers by total purchase amount.
 ```
+
 SELECT TOP 5 CustomerID, SUM(Quantity*Unitprice) AS Total_Purchase_Amount FROM [dbo].[SalesData]
 GROUP BY CustomerID
 ORDER BY Total_Purchase_Amount DESC
 ```
+
+![Screenshot (189)](https://github.com/user-attachments/assets/90212d99-4503-49d5-9cf6-588a61e70a22)
 
 1. Aggregation of Total Purchases:
 
