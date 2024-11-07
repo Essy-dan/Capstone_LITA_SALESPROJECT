@@ -294,7 +294,7 @@ GROUP BY Product: Groups the data by each unique product, so the total sales are
 
 ORDER BY TotalSalesValue DESC: Sorts the results in descending order based on total sales value, ensuring the highest sales value appears at the top.
 
-LIMIT 1: Returns only the top result, which is the product with the highest total sales value.
+TOP 1: Returns only the top result, which is the product with the highest total sales value.
 
 3. Insight Derived:
 
