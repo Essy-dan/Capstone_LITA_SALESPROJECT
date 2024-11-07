@@ -1,5 +1,6 @@
 
 **Sales Data Analysis**
+
 [Project Overview](#project-overview)
 
 [Objectives](#objectives)
@@ -12,11 +13,11 @@
 
 [Analysis](#analysis)
 
-[Business Task/Dashboard Component](#business-task/dashboard-component)
+[Business Task and Dashboard Component](#business-task-and-dashboard-component)
 
 [Key Strategies and Recommendations](#Key-strategies-and-recommendations)
 
-[Conclusion](#conclusions)
+[Conclusion](#conclusion)
 
 ### Project Overview
 ---
@@ -119,7 +120,7 @@ The dataset was transformed to enhance its suitability for analysis.
 - Slicers were implemented to provide interactivity and enhance the dashboard's usability.
 Overall, the analysis and visualization process facilitated a thorough examination of the data, enabling the extraction of valuable insights and presenting them in an interactive and visually appealing manner.
 
-### Business Task/Dashboard Component
+### Business Task and Dashboard Component
 ---
 **Average Sales Per Product and Average Revenue By Region**
 
