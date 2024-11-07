@@ -101,7 +101,17 @@ Overall, the analysis and visualization process facilitated a thorough examinati
 
 ### Business Task/Dashboard Component
 ---
+**Average Sales Per Product and Average Revenue By Region**
 
+![Screenshot (285)](https://github.com/user-attachments/assets/fba62b05-3ead-43be-bf7e-d61580c935fb)
+
+The table above shows the Average Sales per Product and Total Revenue by Region, providing valuable insights into sales performance across different products and regions.
+
+- Average Sales per Product: This metric gives an overview of how each product is performing on average in terms of sales volume or revenue. It helps identify the top-performing products (such as shoes, jackets, or hats) that are driving the most sales and those that might need further marketing or promotion efforts. This analysis allows businesses to make informed decisions about inventory management, product strategy, and pricing adjustments.
+
+- Total Revenue by Region: The total revenue breakdown by region helps to assess the geographical distribution of sales. By analyzing revenue across regions, businesses can pinpoint high-performing areas and regions with untapped potential. This data is essential for regional marketing strategies, sales planning, and decisions on resource allocation. Regions with the highest sales, like the South, may indicate opportunities for further investment or expansion, while underperforming regions can be targeted with tailored promotions or product offerings.
+
+Together, these metrics provide a clear picture of product performance and regional sales trends, enabling strategic decisions to maximize revenue and improve business operations.
 
 
 # Excel Summaries of Total Sales by Product, Region, and Month using Pivot Tables.
@@ -112,7 +122,7 @@ Overall, the analysis and visualization process facilitated a thorough examinati
 **Top Performer**
 
  Shoes stand out as the clear market leader, generating $613,330 in revenue, which significantly outpaces the other categories. This indicates a strong demand for shoes and possibly an opportunity to continue investing in or expanding this category. Shoes alone contribute ~29% of total revenue—a substantial portion of the business.
-	Shirts are also a high-performing category with $485,600 in revenue, contributing ~23% of total sales. Together, shoes and shirts make up over half of the total revenue, suggesting that the company’s strongest products are likely tied to these two items.
+Shirts are also a high-performing category with $485,600 in revenue, contributing ~23% of total sales. Together, shoes and shirts make up over half of the total revenue, suggesting that the company’s strongest products are likely tied to these two items.
  
  **Mid-Performing Categories**
 
@@ -550,6 +560,16 @@ The variations in monthly revenue between 2023 and 2024 suggest both seasonal de
 
 ### Conclusion
 ---
+
+In the analysis, a divergence between total revenue and average sales per product:
+
+- Shoes generate the highest revenue in the dataset, which aligns with their strong sales volume, making them the highest-performing product in terms of overall sales. This indicates that shoes are likely a popular, high-demand product, contributing significantly to the company's top line. However, in terms of average sales per product, shoes rank second, behind shirts. This could suggest that while shoes are sold in large quantities, they are priced lower than shirts or other products, reducing the average sales per product.
+
+- Shirts, although generating lower overall revenue than shoes, come in first in average sales per product. This suggests that shirts, while possibly sold in fewer quantities, are priced higher, driving a greater sales value per unit. This makes shirts a high-value item, and their strong performance in average sales indicates they may appeal to a more premium market or benefit from higher pricing or margins.
+
+This insight reveals the importance of both sales volume and pricing strategies when analyzing product performance. While high-revenue products (like shoes) show volume-driven success, products with higher average sales per unit (like shirts) might be key to profitability and premium market targeting.
+
+These observations highlight the need to balance both revenue generation and pricing strategies to understand the true drivers of business success.
 
 By aligning product, region, and seasonal strategies, the business can maximize its strengths and target areas with high growth potential. Continued analysis of these areas will help refine strategies over time, enabling the business to respond to market trends and capitalize on emerging opportunities. This data-driven approach ensures a well-rounded strategy that will support sustainable growth and a competitive edge in the market.
 
